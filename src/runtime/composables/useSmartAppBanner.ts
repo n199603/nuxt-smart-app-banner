@@ -65,7 +65,7 @@ const useSmartAppBannerState = (bannerConfig: SmartBannerOptions) => {
 }
 
 export const useSmartAppBanner = (emit: any) => {
-    const bannerConfig = useRuntimeConfig().smartAppBanner as SmartBannerOptions;
+    const bannerConfig = useRuntimeConfig().public.smartAppBanner as SmartBannerOptions;
     const {
         appId,
         inStoreText,
